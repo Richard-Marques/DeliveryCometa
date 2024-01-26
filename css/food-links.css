@@ -1,0 +1,71 @@
+.cometa-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	margin: 120px auto 0px auto;
+}
+
+.cometa-link {
+	width: 40%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.cometa-link article {
+	width: 50%;
+	top: -40px;
+	bottom: 0;
+	position: absolute;
+	right: -20px;
+}
+
+.cometa-link article > h2 {
+	font-family: "SulSans", sans-serif;
+	font-size: 2.25rem;
+	line-height: 2.75rem;
+	color: var(--title);
+	margin-bottom: 20px;
+}
+
+.cometa-link article > p {
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--text);
+	margin-bottom: 20px;
+}
+.cometa-link article > a > button {
+	color: var(--white);
+	font-family: "SulSans Bold", sans-serif;
+	background-color: var(--blue-default);
+	padding: 17px 33px;
+	border-radius: 5px;
+	border: none;
+}
+
+.cometa-link article > a > button:hover {
+	background-color: var(--hover-blue);
+}
+
+.cometa-link-img {
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+	.cometa-links {
+		height: 800px;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.cometa-link {
+		width: 90%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
